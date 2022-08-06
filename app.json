@@ -16,7 +16,7 @@
   ],
   "success_url": "/",
   "scripts": {
-    "postdeploy": "bundle exec rake db:schema:load && bundle exec rake db:seed"
+    "postdeploy": "./heroku-ext-hotfix.sh && bundle exec rake db:schema:load && bundle exec rake db:seed"
   },
   "env": {
     "ADMIN_EMAIL": {
