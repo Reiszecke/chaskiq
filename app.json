@@ -20,10 +20,8 @@
   },
   "env": {
     "HEROKU_APP_NAME": {
-      "required": true
-    },
-    "HEROKU_PARENT_APP_NAME": {
-      "required": true
+      "description": "There is absolutely no way we are supposed to specify that default var manually",
+      "value": ""
     },
     "ADMIN_EMAIL": {
       "description": "An admin email to be generated on db:seed task",
